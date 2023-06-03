@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string("delivery_type");
             $table->boolean("use_whatsapp")->default(false);
             $table->decimal("total")->nullable();
+            $table->string("restaurant");
             $table->foreignId("user_id")->nullable()->constrained();
             $table->timestamps();
         });

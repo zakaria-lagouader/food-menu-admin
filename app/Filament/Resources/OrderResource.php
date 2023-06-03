@@ -38,6 +38,7 @@ class OrderResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('user.name')->label("Client"),
+                Tables\Columns\TextColumn::make('restaurant'),
                 Tables\Columns\TextColumn::make('num')
                     ->label("Code"),
                 Tables\Columns\TextColumn::make('telephone'),

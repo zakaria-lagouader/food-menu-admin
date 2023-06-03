@@ -17,6 +17,6 @@ class CuisinierOrder extends Model
 
     public function products()
     {
-        return CuisinierProduct::whereIn("id", $this->product_ids)->get();
+        return CuisinierProduct::whereIn("id", json_decode($this->product_ids))->get();
     }
 }
