@@ -46,6 +46,7 @@ class ProductResource extends Resource
                     ->options(Category::all()->pluck("name", "id"))
                     ->required(),
                 Forms\Components\Select::make('restaurant')
+                    ->multiple()
                     ->options(config("restaurants"))
                     ->required(),
 

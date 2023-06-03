@@ -21,6 +21,10 @@ class Product extends Model
         "points",
     ];
 
+    protected $casts = [
+        "restaurant" => "array"
+    ];
+
     public function category()
     {
         return $this->belongsTo(Category::class);
