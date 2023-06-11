@@ -18,7 +18,6 @@ class Product extends Model
         "price",
         "category_id",
         "restaurant",
-        "points",
     ];
 
     protected $casts = [

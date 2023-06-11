@@ -54,9 +54,6 @@ class ProductResource extends Resource
                 Forms\Components\TextInput::make('price')
                     ->numeric()
                     ->required(),
-                Forms\Components\TextInput::make('points')
-                    ->numeric()
-                    ->required(),
             ]);
     }
 
@@ -70,7 +67,6 @@ class ProductResource extends Resource
                 Tables\Columns\TextColumn::make('name'),
                 Tables\Columns\TextColumn::make('restaurant'),
                 Tables\Columns\TextColumn::make('price'),
-                Tables\Columns\TextColumn::make('points'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->date(),
             ])
